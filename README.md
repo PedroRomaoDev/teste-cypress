@@ -1,7 +1,6 @@
 
-# 🧪 Prova Prática — Automação Web com Cypress
+# Prova Prática — Automação Web com Cypress
 
-[![Build Status](https://github.com/PedroRomaoDev/teste-cypress/actions/workflows/ci.yml/badge.svg)](https://github.com/PedroRomaoDev/teste-cypress/actions/workflows/ci.yml)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)](https://nodejs.org/)
 
 Este projeto automatiza testes de interface (E2E) no site **[SauceDemo](https://www.saucedemo.com/v1/)** utilizando **Cypress**. Os testes cobrem o fluxo completo do usuário: login, visualização e ordenação de produtos, manipulação do carrinho e finalização do checkout.
