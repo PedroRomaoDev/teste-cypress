@@ -1,11 +1,14 @@
 
-# 🧪 Prova Prática - Automação Web com Cypress
+# 🧪 Prova Prática — Automação Web com Cypress
 
-Este projeto realiza testes automatizados de interface (E2E) no site **[SauceDemo](https://www.saucedemo.com/v1/)**, utilizando a ferramenta **Cypress**. Os testes estão organizados por funcionalidades, com base em práticas de BDD, cobrindo o fluxo completo de um usuário no sistema: login, visualização de produtos, manipulação do carrinho e checkout.
+[![Build Status](https://github.com/PedroRomaoDev/teste-cypress/actions/workflows/ci.yml/badge.svg)](https://github.com/PedroRomaoDev/teste-cypress/actions/workflows/ci.yml)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)](https://nodejs.org/)
+
+Este projeto automatiza testes de interface (E2E) no site **[SauceDemo](https://www.saucedemo.com/v1/)** utilizando **Cypress**. Os testes cobrem o fluxo completo do usuário: login, visualização e ordenação de produtos, manipulação do carrinho e finalização do checkout.
 
 ---
 
-## 📁 Estrutura de Pastas
+## 📂 Estrutura do Projeto
 
 ```
 cypress/
@@ -24,22 +27,31 @@ cypress/
 
 ## ✅ Funcionalidades Automatizadas
 
-| Funcionalidade | Status | Descrição |
-|----------------|--------|-----------|
-| Login/Logout   | ✅     | Testes com login válido e inválido, e logout |
-| Produtos       | ✅     | Listagem, visualização e ordenação dos produtos |
-| Carrinho       | ✅     | Adição, remoção e validação de itens |
-| Checkout       | ✅     | Preenchimento de formulário, resumo e finalização da compra |
+| Funcionalidade  | Status | Descrição                                         |
+|-----------------|--------|--------------------------------------------------|
+| Login/Logout    | ✅     | Testes de login válido, inválido e logout        |
+| Produtos        | ✅     | Listagem, detalhes e ordenação dos produtos      |
+| Carrinho        | ✅     | Adição, remoção e validação dos itens no carrinho|
+| Checkout        | ✅     | Preenchimento do formulário, resumo e finalização|
 
 ---
 
-## 🧪 Execução dos Testes
+## ⚙️ Tecnologias Utilizadas
 
-### Pré-requisitos:
-- [Node.js](https://nodejs.org/) instalado
-- Gerenciador de pacotes `npm` ou `yarn`
+- Cypress
+- JavaScript (ES6+)
+- Node.js
 
-### Instalação:
+---
+
+## 🚀 Como Executar os Testes
+
+### Pré-requisitos
+
+- Node.js instalado ([https://nodejs.org/](https://nodejs.org/))
+- Gerenciador de pacotes: npm ou yarn
+
+### Passos
 
 ```bash
 git clone https://github.com/PedroRomaoDev/teste-cypress.git
@@ -47,13 +59,13 @@ cd teste-cypress
 npm install
 ```
 
-### Rodar Cypress no modo interativo:
+### Executar em modo interativo (com interface gráfica):
 
 ```bash
-npx cypress open
+npm run cy:open
 ```
 
-### Rodar Cypress no modo headless (linha de comando):
+### Executar em modo headless (linha de comando):
 
 ```bash
 npx cypress run
@@ -61,39 +73,13 @@ npx cypress run
 
 ---
 
-## 📋 Exemplo de Caso de Teste (BDD)
+## 👨‍💻 Sobre o Autor
 
-```gherkin
-Funcionalidade: Login no sistema
-
-  Cenário: Login com credenciais válidas
-    Dado que o usuário acessa a página de login
-    Quando ele informa o usuário "standard_user" e a senha "secret_sauce"
-    E clica no botão de login
-    Então ele deve ser redirecionado para a página de produtos
-```
-
----
-
-## ⚙️ Tecnologias Utilizadas
-
-- ✅ Cypress
-- ✅ JavaScript (ES6+)
-- ✅ Node.js
-- ✅ HTML/CSS (análise de elementos da UI)
-- ✅ Gherkin (para descrição dos cenários)
-
----
-
-## 👨‍💻 Autor
-
-Pedro Romão  
-Instrutor de Programação | Desenvolvedor Full Stack  
-📧 pedro@email.com  
+Pedro Henrique Romão 
 📎 GitHub: [github.com/PedroRomaoDev](https://github.com/PedroRomaoDev)
 
 ---
 
 ## 🏁 Considerações Finais
 
-Este projeto foi desenvolvido como parte da **Prova Prática de Teste de Software com Automação Web**. A estrutura modular, a aplicação de boas práticas e a clareza dos testes permitem fácil manutenção e extensão para futuras funcionalidades.
+Este projeto foi desenvolvido como parte da **Prova Prática de Teste de Software com Automação Web**. Uso de boas práticas e a clareza dos testes.
